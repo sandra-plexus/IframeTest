@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de integración con Appian</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Prueba de integración con Appian</h1>
+        <p>Introduce el <strong>idPET</strong> para cargar la interfaz de Appian dentro del iframe.</p>
+    </header>
+
+    <main>
+        <!-- Formulario para ingresar el idPET -->
+        <label for="idPet">Ingresa ID de PET:</label>
+        <input type="text" id="idPet" placeholder="Ejemplo: 12345">
+
+        <!-- Botón que actualizará el iframe con el ID ingresado -->
+        <button onclick="cargarIframe()">Cargar Iframe</button>
+
+        <!-- Iframe donde se mostrará la interfaz de Appian -->
+        <iframe id="appianIframe" width="100%" height="600px" style="border: none;"></iframe>
+    </main>
+
+    <footer>
+        <p>Prueba de integración realizada en GitHub Pages. © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
